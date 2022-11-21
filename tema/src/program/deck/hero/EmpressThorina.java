@@ -2,19 +2,24 @@ package program.deck.hero;
 
 import fileio.CardInput;
 import program.deck.Card;
-import program.deck.minion.Minion;
 
 import java.util.ArrayList;
 
-public class EmpressThorina extends Hero{
+public final class EmpressThorina extends Hero {
     // Constructor
-    public EmpressThorina(CardInput input) {
+    public EmpressThorina(final CardInput input) {
         super(input);
     }
 
-    // Hero ability
+    /**
+     * Method finds card with the greatest health on @param row
+     * and kills it.
+     *
+     * @param row specifies row on table on which hero ability
+     *            should be unleashed
+     */
     @Override
-    public void ability(ArrayList<Card> row) {
+    public void ability(final ArrayList<Card> row) {
         Card max = row.get(0);
         int index = 0;
         int i = 0;
@@ -28,7 +33,7 @@ public class EmpressThorina extends Hero{
             i++;
         }
 
-        // Destroy card
+        // Destroy card by removing it from table row
         row.remove(index);
     }
 }

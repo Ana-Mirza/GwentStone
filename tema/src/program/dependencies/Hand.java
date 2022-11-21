@@ -4,10 +4,8 @@ import program.deck.Card;
 
 import java.util.ArrayList;
 
-public class Hand {
+public final class Hand {
     private ArrayList<Card> cards;
-
-    // Constructor
     public Hand() {
         cards = new ArrayList<>();
     }
@@ -16,7 +14,7 @@ public class Hand {
     public ArrayList<Card> getCards() {
         return cards;
     }
-    public void setCards(ArrayList<Card> cards) {
+    public void setCards(final ArrayList<Card> cards) {
         this.cards = cards;
     }
 }

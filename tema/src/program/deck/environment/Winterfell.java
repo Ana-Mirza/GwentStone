@@ -6,16 +6,22 @@ import program.deck.minion.Minion;
 
 import java.util.ArrayList;
 
-public class Winterfell extends Environment{
+public final class Winterfell extends Environment {
     // Constructor
-    public Winterfell(CardInput input) {
+    public Winterfell(final CardInput input) {
         super(input);
     }
 
-    // Card ability
+    /**
+     * Method freezes all cards on @param row
+     *
+     * @param row specifies row on table on which ability
+     *            of environment card to be unleashed
+     */
     @Override
-    public void ability(ArrayList<Card> row) {
-        for (Card card: row)
+    public void ability(final ArrayList<Card> row) {
+        for (Card card: row) {
             ((Minion) card).setFrozen(1);
+        }
     }
 }

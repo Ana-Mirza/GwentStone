@@ -2,30 +2,25 @@ package program;
 
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import fileio.ActionsInput;
-import fileio.CardInput;
 import fileio.Input;
 import program.commands.Command;
-import program.deck.Card;
-import program.deck.environment.Firestorm;
-import program.deck.environment.HeartHound;
-import program.deck.environment.Winterfell;
-import program.deck.hero.*;
-import program.deck.minion.*;
-import program.dependencies.Hand;
 import program.dependencies.Player;
 import program.dependencies.Table;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Random;
 
-public class Program {
-    private ArrayList<Player> player;
-    private Table table;
+public final class Program {
 
     // Singleton Pattern
     private static Program instance = null;
-    private Program() {}
+    private Program() { }
+
+    /**
+     * Method instantiates program class using Singleton
+     * Pattern
+     *
+     * @return returns unique instance of program class
+     */
     public static Program getInstance() {
         if (instance == null) {
             instance = new Program();
@@ -33,17 +28,26 @@ public class Program {
         return instance;
     }
 
-    // Beginning of the program
-    public ArrayNode start(Input inputData, ArrayNode output) {
+    /**
+     * Method runs the games specified in input by uploading
+     * given information about players, their decks and heroes,
+     * and runs games and commands given. It returns the output of
+     * specific commands.
+     *
+     * @param inputData stores input data from input file
+     * @param output stores output of game commands
+     * @return returns output containing output of all commands
+     */
+    public ArrayNode start(final Input inputData, final ArrayNode output) {
         // Create new players
-        player = new ArrayList<>();
+        ArrayList<Player> player = new ArrayList<>();
         player.add(new Player());
         player.add(new Player());
 
         // Run games
         for (int i = 0; i < inputData.getGames().size(); i++) {
             // Set new table and player attributes at beginning of game
-            table = new Table();
+            Table table = new Table();
             Upload upload = new Upload();
             // Set round index and mana
             player.get(0).setRound(2);
@@ -55,9 +59,11 @@ public class Program {
 
             // Upload players
             upload.uploadPlayers(inputData, player, i);
-            player.get(0).setPlayerIdx(inputData.getGames().get(i).getStartGame().getStartingPlayer());
+            player.get(0).setPlayerIdx(
+                    inputData.getGames().get(i).getStartGame().getStartingPlayer());
             // shuffle decks
-            upload.shuffleDecks(player, inputData.getGames().get(i).getStartGame().getShuffleSeed());
+            upload.shuffleDecks(player,
+                    inputData.getGames().get(i).getStartGame().getShuffleSeed());
 
             // Execute actions
             for (ActionsInput command: inputData.getGames().get(i).getActions()) {
@@ -66,8 +72,9 @@ public class Program {
                     player.get(0).setRound(0);
                     upload.newRound(player, mana);
                     // Increase mana for next round
-                    if (mana < 10)
+                    if (mana < 10) {
                         mana++;
+                    }
                 }
                 // Upload command
                 Command newCommand = upload.uploadCommand(command);

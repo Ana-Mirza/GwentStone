@@ -1,12 +1,9 @@
 package program.deck.minion;
 
 import fileio.CardInput;
-import fileio.Input;
 
-public class Sentinel extends Minion{
-
-    // Constructor
-    public Sentinel(CardInput input) {
+public final class Sentinel extends Minion {
+    public Sentinel(final CardInput input) {
         super(input);
     }
 }

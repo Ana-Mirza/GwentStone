@@ -1,10 +1,8 @@
 package program.deck;
 
 import fileio.CardInput;
-import fileio.DecksInput;
 
 import java.util.ArrayList;
-import java.util.SimpleTimeZone;
 
 public abstract class Card {
     private int mana;
@@ -18,7 +16,7 @@ public abstract class Card {
     public Card() {
         colors = new ArrayList<>();
     }
-    public Card(CardInput input) {
+    public Card(final CardInput input) {
         mana = input.getMana();
         attackDamage = input.getAttackDamage();
         health = input.getHealth();
@@ -26,7 +24,7 @@ public abstract class Card {
         colors = input.getColors();
         name = input.getName();
     }
-    public Card(Card card) {
+    public Card(final Card card) {
         mana = card.getMana();
         attackDamage = card.getAttackDamage();
         health = card.getHealth();
@@ -36,43 +34,46 @@ public abstract class Card {
     }
 
     // Setters and Getters
-    public int getMana() {
+    public final int getMana() {
         return mana;
     }
-    public void setMana(final int mana) {
+    public final void setMana(final int mana) {
         this.mana = mana;
     }
-    public String getDescription() {
+    public final String getDescription() {
         return description;
     }
-    public void setDescription(final String description) {
+    public final void setDescription(final String description) {
         this.description = description;
     }
-    public ArrayList<String> getColors() {
+    public final ArrayList<String> getColors() {
         return colors;
     }
-    public void setColors(final ArrayList<String> colors) {
+    public final void setColors(final ArrayList<String> colors) {
         this.colors = colors;
     }
-    public String getName() {
+    public final String getName() {
         return name;
     }
-    public void setName(final String name) {
+    public final void setName(final String name) {
         this.name = name;
     }
-    public int getAttackDamage() {
+    public final int getAttackDamage() {
         return attackDamage;
     }
-    public void setAttackDamage(int attackDamage) {
+    public final void setAttackDamage(final int attackDamage) {
         this.attackDamage = attackDamage;
     }
-    public int getHealth() {
+    public final int getHealth() {
         return health;
     }
-    public void setHealth(int health) {
+    public final void setHealth(final int health) {
         this.health = health;
     }
 
-    // Ability method
-    public void ability() {};
+    /**
+     * Method that implements a specific card ability.
+     * To be defined by classes extending this class.
+     */
+    public void ability() { }
 }

@@ -3,7 +3,7 @@ package program.dependencies;
 import program.deck.Deck;
 import program.deck.hero.Hero;
 
-public class Player {
+public final class Player {
     private Deck deck;
     private Hand hand;
     private Hero hero;
@@ -17,7 +17,7 @@ public class Player {
         return totalGames;
     }
 
-    public void setTotalGames(int totalGames) {
+    public void setTotalGames(final int totalGames) {
         this.totalGames = totalGames;
     }
 
@@ -31,43 +31,43 @@ public class Player {
     public int getWonGames() {
         return wonGames;
     }
-    public void setWonGames(int wonGames) {
+    public void setWonGames(final int wonGames) {
         this.wonGames = wonGames;
     }
     public int getMana() {
         return mana;
     }
-    public void setMana(int mana) {
+    public void setMana(final int mana) {
         this.mana = mana;
     }
     public Hero getHero() {
         return hero;
     }
-    public void setHero(Hero hero) {
+    public void setHero(final Hero hero) {
         this.hero = hero;
     }
     public Hand getHand() {
         return hand;
     }
-    public void setHand(Hand hand) {
+    public void setHand(final Hand hand) {
         this.hand = hand;
     }
     public Deck getDeck() {
         return deck;
     }
-    public void setDeck(Deck deck) {
+    public void setDeck(final Deck deck) {
         this.deck = deck;
     }
     public int getRound() {
         return round;
     }
-    public void setRound(int round) {
+    public void setRound(final int round) {
         this.round = round;
     }
     public int getPlayerIdx() {
         return playerIdx;
     }
-    public void setPlayerIdx(int playerIdx) {
+    public void setPlayerIdx(final int playerIdx) {
         this.playerIdx = playerIdx;
     }
 }

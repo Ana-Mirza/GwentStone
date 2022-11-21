@@ -2,22 +2,23 @@ package program.deck.environment;
 
 import fileio.CardInput;
 import program.deck.Card;
-import program.deck.minion.Minion;
 
 import java.util.ArrayList;
 
-public class Firestorm extends Environment{
+public final class Firestorm extends Environment {
     // Constructor
-    public Firestorm(CardInput input) {
+    public Firestorm(final CardInput input) {
         super(input);
     }
 
-    // Card ability
+    /**
+     * Method applies -1 health to all cards on row.
+     *
+     * @param row specifies row on table on which ability
+     *            of environment card to be unleashed
+     */
     @Override
-    public void ability(ArrayList<Card> row) {
-        int size = row.size();
-
-        // Apply -1 health to all cards on row
+    public void ability(final ArrayList<Card> row) {
         for (int i = 0; i < row.size(); i++) {
             row.get(i).setHealth(row.get(i).getHealth() - 1);
             // Delete card from table if health is 0

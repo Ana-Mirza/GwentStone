@@ -2,22 +2,24 @@ package program.deck.environment;
 
 import fileio.CardInput;
 import program.deck.Card;
-import program.deck.minion.Minion;
 
 import java.util.ArrayList;
 
-public class HeartHound extends Environment{
-    private int mana;
-    private String description;
-    private ArrayList<String> colors;
-    private String name;
-    // Constructor
-    public HeartHound(CardInput input) {
+public final class HeartHound extends Environment {
+    public HeartHound(final CardInput input) {
         super(input);
     }
 
-    // Card ability
-    public void ability(ArrayList<Card> row, ArrayList<Card> row2) {
+    /**
+     * Method finds minion with the greatest health on @param row
+     * and places it on mirror row of current player, if it
+     * has space.
+     *
+     * @param row row of opponent player from which card is to
+     *            be stolen
+     * @param row2 row on which card stolen is to be placed
+     */
+    public void ability(final ArrayList<Card> row, final ArrayList<Card> row2) {
         Card max = row.get(0);
         int index = 0;
         int i = 0;

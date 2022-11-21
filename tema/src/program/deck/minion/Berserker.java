@@ -2,10 +2,8 @@ package program.deck.minion;
 
 import fileio.CardInput;
 
-public class Berserker extends Minion{
-
-    // Constructor
-    public Berserker(CardInput input) {
+public final class Berserker extends Minion {
+    public Berserker(final CardInput input) {
         super(input);
     }
 }

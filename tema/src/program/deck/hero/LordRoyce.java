@@ -6,15 +6,21 @@ import program.deck.minion.Minion;
 
 import java.util.ArrayList;
 
-public class LordRoyce extends Hero{
+public final class LordRoyce extends Hero {
     // Constructor
-    public LordRoyce(CardInput input) {
+    public LordRoyce(final CardInput input) {
         super(input);
     }
 
-    // Hero ability
+    /**
+     * Method finds card with greatest attack-damage on @param row
+     * and freezes it.
+     *
+     * @param row specifies row on table on which hero ability
+     *            should be unleashed
+     */
     @Override
-    public void ability(ArrayList<Card> row) {
+    public void ability(final ArrayList<Card> row) {
         Card max = row.get(0);
         int index = 0;
         int i = 0;
