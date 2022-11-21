@@ -21,7 +21,6 @@ import java.util.ArrayList;
 
 public class PlaceCard implements Command {
     private final int handIdx;
-
     public PlaceCard(final ActionsInput input) {
         handIdx = input.getHandIdx();
     }

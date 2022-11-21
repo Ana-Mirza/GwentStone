@@ -17,8 +17,6 @@ import java.util.ArrayList;
 
 public final class UseHeroAbility implements Command {
     private final int affectedRow;
-
-    // Constructor
     public UseHeroAbility(final ActionsInput input) {
         affectedRow = input.getAffectedRow();
     }

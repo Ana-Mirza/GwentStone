@@ -17,7 +17,6 @@ import java.util.Map;
 public class UseEnvironmentCard implements Command {
     private final int handIdx;
     private final int affectedRow;
-
     public UseEnvironmentCard(final ActionsInput input) {
         handIdx = input.getHandIdx();
         affectedRow = input.getAffectedRow();

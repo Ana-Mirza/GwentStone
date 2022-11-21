@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 public class GetPlayerDeck implements Command {
     private final int playerIdx;
-
     public GetPlayerDeck(final ActionsInput input) {
         this.playerIdx = input.getPlayerIdx();
     }

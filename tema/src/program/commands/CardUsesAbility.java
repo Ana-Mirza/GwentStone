@@ -19,8 +19,6 @@ import java.util.ArrayList;
 public class CardUsesAbility implements Command {
     private final MyCoordinates cardAttacker;
     private final MyCoordinates cardAttacked;
-
-    // Constructor
     public CardUsesAbility(final ActionsInput input) {
         cardAttacker = new MyCoordinates(input.getCardAttacker());
         cardAttacked = new MyCoordinates(input.getCardAttacked());

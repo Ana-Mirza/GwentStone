@@ -16,8 +16,6 @@ import java.util.ArrayList;
 
 public class UseAttackHero implements Command {
     private final MyCoordinates cardAttacker;
-
-    // Constructor
     public UseAttackHero(final ActionsInput input) {
         cardAttacker = new MyCoordinates(input.getCardAttacker());
     }

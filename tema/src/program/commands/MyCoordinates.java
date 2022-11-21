@@ -9,8 +9,6 @@ public final class MyCoordinates {
         this.x = x;
         this.y = y;
     }
-
-    // Copy constructor
     public MyCoordinates(final Coordinates coord) {
         this(coord.getX(), coord.getY());
     }

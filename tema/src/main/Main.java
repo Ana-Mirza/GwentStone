@@ -70,7 +70,7 @@ public final class Main {
 
         ArrayNode output = objectMapper.createArrayNode();
 
-        //TODO add here the entry point to your implementation
+        // Entry point of implementation
         Program game = Program.getInstance();
         game.start(inputData, output);
 

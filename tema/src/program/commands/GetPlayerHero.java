@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 public class GetPlayerHero implements Command {
     private final int playerIdx;
-
     public GetPlayerHero(final ActionsInput input) {
         this.playerIdx = input.getPlayerIdx();
     }
