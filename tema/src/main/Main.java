@@ -72,7 +72,7 @@ public final class Main {
 
         //TODO add here the entry point to your implementation
         Program game = Program.getInstance();
-        output = game.start(inputData, output);
+        game.start(inputData, output);
 
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(filePath2), output);

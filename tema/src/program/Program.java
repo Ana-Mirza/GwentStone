@@ -16,8 +16,7 @@ public final class Program {
     private Program() { }
 
     /**
-     * Method instantiates program class using Singleton
-     * Pattern
+     * Instantiates program class using Singleton Pattern
      *
      * @return returns unique instance of program class
      */
@@ -29,16 +28,15 @@ public final class Program {
     }
 
     /**
-     * Method runs the games specified in input by uploading
-     * given information about players, their decks and heroes,
-     * and runs games and commands given. It returns the output of
-     * specific commands.
+     * Entry point of the program. It runs the games specified in input
+     * by uploading given information about players, their decks and
+     * heroes, and runs games and commands given. It returns the output
+     * of specific commands in output.
      *
      * @param inputData stores input data from input file
      * @param output stores output of game commands
-     * @return returns output containing output of all commands
      */
-    public ArrayNode start(final Input inputData, final ArrayNode output) {
+    public void start(final Input inputData, final ArrayNode output) {
         // Create new players
         ArrayList<Player> player = new ArrayList<>();
         player.add(new Player());
@@ -81,6 +79,5 @@ public final class Program {
                 newCommand.action(output, player, table);
             }
         }
-        return output;
     }
 }

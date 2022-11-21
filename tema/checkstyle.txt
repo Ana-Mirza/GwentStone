@@ -18,6 +18,12 @@ Starting audit...
 [ERROR] C:\Users\anami\OneDrive - Universitatea Politehnica Bucuresti\IdeaProjects\myRepo\oop-Tema1\tema\.\src\program\commands\UseHeroAbility.java:113:74: '3' is a magic number. [MagicNumber]
 [ERROR] C:\Users\anami\OneDrive - Universitatea Politehnica Bucuresti\IdeaProjects\myRepo\oop-Tema1\tema\.\src\program\deck\hero\Hero.java:18:25: '30' is a magic number. [MagicNumber]
 [ERROR] C:\Users\anami\OneDrive - Universitatea Politehnica Bucuresti\IdeaProjects\myRepo\oop-Tema1\tema\.\src\program\dependencies\Table.java:12:29: '4' is a magic number. [MagicNumber]
-[ERROR] C:\Users\anami\OneDrive - Universitatea Politehnica Bucuresti\IdeaProjects\myRepo\oop-Tema1\tema\.\src\program\Program.java:75:32: '10' is a magic number. [MagicNumber]
+[ERROR] C:\Users\anami\OneDrive - Universitatea Politehnica Bucuresti\IdeaProjects\myRepo\oop-Tema1\tema\.\src\program\Program.java:73:32: '10' is a magic number. [MagicNumber]
+[ERROR] C:\Users\anami\OneDrive - Universitatea Politehnica Bucuresti\IdeaProjects\myRepo\oop-Tema1\tema\.\src\program\Upload.java:50:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\anami\OneDrive - Universitatea Politehnica Bucuresti\IdeaProjects\myRepo\oop-Tema1\tema\.\src\program\Upload.java:72:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\anami\OneDrive - Universitatea Politehnica Bucuresti\IdeaProjects\myRepo\oop-Tema1\tema\.\src\program\Upload.java:89:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\anami\OneDrive - Universitatea Politehnica Bucuresti\IdeaProjects\myRepo\oop-Tema1\tema\.\src\program\Upload.java:98:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\anami\OneDrive - Universitatea Politehnica Bucuresti\IdeaProjects\myRepo\oop-Tema1\tema\.\src\program\Upload.java:121:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\anami\OneDrive - Universitatea Politehnica Bucuresti\IdeaProjects\myRepo\oop-Tema1\tema\.\src\program\Upload.java:136:5: Missing a Javadoc comment. [MissingJavadocMethod]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 26 errors.

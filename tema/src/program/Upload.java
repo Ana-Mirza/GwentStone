@@ -47,7 +47,7 @@ import java.util.Collections;
 import java.util.Random;
 
 public final class Upload {
-    protected void uploadPlayers(final Input input, final ArrayList<Player> players,
+    public void uploadPlayers(final Input input, final ArrayList<Player> players,
                                  final int index) {
         // Set players' hand and mana
         for (Player player: players) {
@@ -69,7 +69,7 @@ public final class Upload {
         uploadHero(hero, players.get(1));
 
     }
-    protected void uploadCards(final Player player, final ArrayList<CardInput> deck) {
+    public void uploadCards(final Player player, final ArrayList<CardInput> deck) {
         for (CardInput card: deck) {
             switch (card.getName()) {
                 case "Sentinel" -> player.getDeck().getCards().add(new Sentinel(card));
@@ -86,7 +86,7 @@ public final class Upload {
             }
         }
     }
-    protected void uploadHero(final CardInput hero, final Player player) {
+    public void uploadHero(final CardInput hero, final Player player) {
         // create instance for hero of player
         switch (hero.getName()) {
             case "Lord Royce" -> player.setHero(new LordRoyce(hero));
@@ -95,7 +95,7 @@ public final class Upload {
             default -> player.setHero(new GeneralKocioraw(hero));
         }
     }
-    protected Command uploadCommand(final ActionsInput command) {
+    public Command uploadCommand(final ActionsInput command) {
         return switch (command.getCommand()) {
             case "getCardsInHand" -> new GetCardsInHand(command);
             case "getPlayerDeck" -> new GetPlayerDeck(command);
@@ -118,7 +118,7 @@ public final class Upload {
             default -> new EndPlayerTurn();
         };
     }
-    protected void newRound(final ArrayList<Player> player, final int mana) {
+    public void newRound(final ArrayList<Player> player, final int mana) {
         // Add mana to players
         player.get(0).setMana(player.get(0).getMana() + mana);
         player.get(1).setMana(player.get(1).getMana() + mana);
@@ -133,7 +133,7 @@ public final class Upload {
             player.get(1).getDeck().getCards().remove(0);
         }
     }
-    protected void shuffleDecks(final ArrayList<Player> player, final int seed) {
+    public void shuffleDecks(final ArrayList<Player> player, final int seed) {
         Collections.shuffle(player.get(0).getDeck().getCards(), new Random(seed));
         Collections.shuffle(player.get(1).getDeck().getCards(), new Random(seed));
     }
