@@ -26,6 +26,7 @@ public class EndPlayerTurn implements Command {
      * @param table stores current status of the cards on the table;
      *              parameter not used for this action
      */
+    @Override
     public final void action(final ArrayNode output, final ArrayList<Player> player,
                              final Table table) {
 

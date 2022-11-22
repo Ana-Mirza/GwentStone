@@ -23,6 +23,7 @@ public class GetFrozenCardsOnTable implements Command {
      *               action
      * @param table stores current status of the cards on the table
      */
+    @Override
     public final void action(final ArrayNode output, final ArrayList<Player> player,
                              final Table table) {
         ObjectMapper mapper = new ObjectMapper();

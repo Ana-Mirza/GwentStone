@@ -31,6 +31,7 @@ public final class UseHeroAbility implements Command {
      *               total games played
      * @param table stores current status of the cards on the table
      */
+    @Override
     public void action(final ArrayNode output, final ArrayList<Player> player,
                        final Table table) {
         ObjectMapper mapper = new ObjectMapper();
