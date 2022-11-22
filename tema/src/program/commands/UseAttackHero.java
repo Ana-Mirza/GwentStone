@@ -14,7 +14,7 @@ import program.dependencies.Table;
 
 import java.util.ArrayList;
 
-public class UseAttackHero implements Command {
+public final class UseAttackHero implements Command {
     private final MyCoordinates cardAttacker;
     public UseAttackHero(final ActionsInput input) {
         cardAttacker = new MyCoordinates(input.getCardAttacker());
@@ -33,7 +33,7 @@ public class UseAttackHero implements Command {
      * @param table stores current status of the cards on the table
      */
     @Override
-    public final void action(final ArrayNode output, final ArrayList<Player> player,
+    public void action(final ArrayNode output, final ArrayList<Player> player,
                              final Table table) {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode node = mapper.createObjectNode();

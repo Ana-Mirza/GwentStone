@@ -9,7 +9,7 @@ import program.dependencies.Table;
 
 import java.util.ArrayList;
 
-public class GetCardAtPosition implements Command {
+public final class GetCardAtPosition implements Command {
     private final int x;
     private final int y;
 
@@ -30,7 +30,7 @@ public class GetCardAtPosition implements Command {
      * @param table stores current status of the cards on the table
      */
     @Override
-    public final void action(final ArrayNode output, final ArrayList<Player> player,
+    public void action(final ArrayNode output, final ArrayList<Player> player,
                              final Table table) {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode node = mapper.createObjectNode();

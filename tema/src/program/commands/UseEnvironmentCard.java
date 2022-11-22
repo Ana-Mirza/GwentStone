@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UseEnvironmentCard implements Command {
+public final class UseEnvironmentCard implements Command {
     private final int handIdx;
     private final int affectedRow;
     public UseEnvironmentCard(final ActionsInput input) {
@@ -34,7 +34,7 @@ public class UseEnvironmentCard implements Command {
      * @param table stores current status of the cards on the table
      */
     @Override
-    public final void action(final ArrayNode output, final ArrayList<Player> player,
+    public void action(final ArrayNode output, final ArrayList<Player> player,
                              final Table table) {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode node = mapper.createObjectNode();

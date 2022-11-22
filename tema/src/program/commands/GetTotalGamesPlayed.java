@@ -8,7 +8,7 @@ import program.dependencies.Table;
 
 import java.util.ArrayList;
 
-public class GetTotalGamesPlayed implements Command {
+public final class GetTotalGamesPlayed implements Command {
     public GetTotalGamesPlayed() { }
 
     /**
@@ -23,7 +23,7 @@ public class GetTotalGamesPlayed implements Command {
      *              parameter not used for this action
      */
     @Override
-    public final void action(final ArrayNode output, final ArrayList<Player> player,
+    public void action(final ArrayNode output, final ArrayList<Player> player,
                              final Table table) {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode node = mapper.createObjectNode();

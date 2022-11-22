@@ -9,7 +9,7 @@ import program.dependencies.Table;
 
 import java.util.ArrayList;
 
-public class GetPlayerHero implements Command {
+public final class GetPlayerHero implements Command {
     private final int playerIdx;
     public GetPlayerHero(final ActionsInput input) {
         this.playerIdx = input.getPlayerIdx();
@@ -27,7 +27,7 @@ public class GetPlayerHero implements Command {
      *              parameter not used for this action
      */
     @Override
-    public final void action(final ArrayNode output, final ArrayList<Player> player,
+    public void action(final ArrayNode output, final ArrayList<Player> player,
                              final Table table) {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode node = mapper.createObjectNode();

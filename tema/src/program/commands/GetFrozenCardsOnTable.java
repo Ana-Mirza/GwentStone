@@ -10,7 +10,7 @@ import program.dependencies.Table;
 
 import java.util.ArrayList;
 
-public class GetFrozenCardsOnTable implements Command {
+public final class GetFrozenCardsOnTable implements Command {
     public GetFrozenCardsOnTable() { }
 
     /**
@@ -24,7 +24,7 @@ public class GetFrozenCardsOnTable implements Command {
      * @param table stores current status of the cards on the table
      */
     @Override
-    public final void action(final ArrayNode output, final ArrayList<Player> player,
+    public void action(final ArrayNode output, final ArrayList<Player> player,
                              final Table table) {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode node = mapper.createObjectNode();

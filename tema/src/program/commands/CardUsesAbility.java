@@ -16,7 +16,7 @@ import program.dependencies.Player;
 import program.dependencies.Table;
 
 import java.util.ArrayList;
-public class CardUsesAbility implements Command {
+public final class CardUsesAbility implements Command {
     private final MyCoordinates cardAttacker;
     private final MyCoordinates cardAttacked;
     public CardUsesAbility(final ActionsInput input) {
@@ -35,7 +35,7 @@ public class CardUsesAbility implements Command {
      * @param table stores current status of the cards on the table
      */
     @Override
-    public final void action(final ArrayNode output, final ArrayList<Player> player,
+    public void action(final ArrayNode output, final ArrayList<Player> player,
                              final Table table) {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode node = mapper.createObjectNode();

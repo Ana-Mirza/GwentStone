@@ -11,7 +11,7 @@ import program.dependencies.Table;
 
 import java.util.ArrayList;
 
-public class GetEnvironmentCardsInHand implements Command {
+public final class GetEnvironmentCardsInHand implements Command {
     private final int playerIdx;
 
     public GetEnvironmentCardsInHand(final ActionsInput input) {
@@ -30,7 +30,7 @@ public class GetEnvironmentCardsInHand implements Command {
      *              parameter not used for this action
      */
     @Override
-    public final void action(final ArrayNode output, final ArrayList<Player> player,
+    public void action(final ArrayNode output, final ArrayList<Player> player,
                              final Table table) {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode node = mapper.createObjectNode();

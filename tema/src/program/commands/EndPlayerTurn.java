@@ -9,7 +9,7 @@ import program.dependencies.Table;
 
 import java.util.ArrayList;
 
-public class EndPlayerTurn implements Command {
+public final class EndPlayerTurn implements Command {
     public EndPlayerTurn() { }
 
     /**
@@ -27,7 +27,7 @@ public class EndPlayerTurn implements Command {
      *              parameter not used for this action
      */
     @Override
-    public final void action(final ArrayNode output, final ArrayList<Player> player,
+    public void action(final ArrayNode output, final ArrayList<Player> player,
                              final Table table) {
 
         // find rows of cards of player
