@@ -88,12 +88,19 @@ public final class UseHeroAbility implements Command {
     private boolean enemyRowError(final ObjectNode node, final ArrayList<Player> player) {
         int playerIdx = player.get(0).getPlayerIdx();
         Hero hero = player.get((playerIdx + 1) % 2).getHero();
+
+        // Set rows
+        final int backRow1 = 3;
+        final int frontRow1 = 2;
+        final int backRow2 = 0;
+        final int frontRow2 = 1;
+
         if ((hero instanceof LordRoyce || hero instanceof EmpressThorina)
-                && playerIdx == 1 && (affectedRow == 2 || affectedRow == 3)) {
+                && playerIdx == 1 && (affectedRow == frontRow1 || affectedRow == backRow1)) {
             node.put("error", "Selected row does not belong to the enemy.");
             return true;
         } else if ((hero instanceof LordRoyce || hero instanceof EmpressThorina)
-                && playerIdx == 2 && (affectedRow == 0 || affectedRow == 1)) {
+                && playerIdx == 2 && (affectedRow == backRow2 || affectedRow == frontRow2)) {
             node.put("error", "Selected row does not belong to the enemy.");
             return true;
         }
@@ -104,12 +111,19 @@ public final class UseHeroAbility implements Command {
     private boolean alliedRowError(final ObjectNode node, final ArrayList<Player> player) {
         int playerIdx = player.get(0).getPlayerIdx();
         Hero hero = player.get((playerIdx + 1) % 2).getHero();
+
+        // Set rows
+        final int backRow1 = 3;
+        final int frontRow1 = 2;
+        final int backRow2 = 0;
+        final int frontRow2 = 1;
+
         if ((hero instanceof GeneralKocioraw || hero instanceof KingMudface)
-                && playerIdx == 1 && (affectedRow == 0 || affectedRow == 1)) {
+                && playerIdx == 1 && (affectedRow == backRow2 || affectedRow == frontRow2)) {
             node.put("error", "Selected row does not belong to the current player.");
             return true;
         } else if ((hero instanceof GeneralKocioraw || hero instanceof KingMudface)
-                && playerIdx == 2 && (affectedRow == 2 || affectedRow == 3)) {
+                && playerIdx == 2 && (affectedRow == frontRow1 || affectedRow == backRow1)) {
             node.put("error", "Selected row does not belong to the current player.");
             return true;
         }

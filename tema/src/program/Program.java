@@ -70,7 +70,9 @@ public final class Program {
                     player.get(0).setRound(0);
                     upload.newRound(player, mana);
                     // Increase mana for next round
-                    if (mana < 10) {
+
+                    final int maxMana = 10;
+                    if (mana < maxMana) {
                         mana++;
                     }
                 }

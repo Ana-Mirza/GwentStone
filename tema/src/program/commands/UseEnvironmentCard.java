@@ -53,11 +53,16 @@ public final class UseEnvironmentCard implements Command {
         Card card = player.get(index).getHand().getCards().get(handIdx);
         if (card instanceof HeartHound) {
             // find mirror row
+            final int backRow1 = 3;
+            final int backRow2 = 0;
+            final int frontRow1 = 2;
+            final int frontRow2 = 1;
+
             Map<Integer, Integer> map = new HashMap<>();
-            map.put(0, 3);
-            map.put(1, 2);
-            map.put(2, 1);
-            map.put(3, 0);
+            map.put(backRow1, backRow2);
+            map.put(frontRow1, frontRow2);
+            map.put(frontRow2, frontRow1);
+            map.put(backRow2, backRow1);
 
             int mirrorRow = map.get(affectedRow);
             ((HeartHound) card).ability(table.getTable().get(affectedRow),
@@ -100,8 +105,13 @@ public final class UseEnvironmentCard implements Command {
     private boolean rowError(final ObjectNode node, final ArrayList<Player> player) {
         int playerIdx = player.get(0).getPlayerIdx();
 
-        if ((playerIdx == 1 && (affectedRow == 2 || affectedRow == 3))
-                || (playerIdx == 2 && (affectedRow == 0 || affectedRow == 1))) {
+        final int backRow1 = 3;
+        final int backRow2 = 0;
+        final int frontRow1 = 2;
+        final int frontRow2 = 1;
+
+        if ((playerIdx == 1 && (affectedRow == frontRow1 || affectedRow == backRow1))
+                || (playerIdx == 2 && (affectedRow == backRow2 || affectedRow == frontRow2))) {
             node.put("error", "Chosen row does not belong to the enemy.");
             return true;
         }
@@ -115,16 +125,23 @@ public final class UseEnvironmentCard implements Command {
         int index = (player.get(0).getPlayerIdx() + 1) % 2;
         Card card = player.get(index).getHand().getCards().get(handIdx);
 
+        // initialize rows
+        final int backRow1 = 3;
+        final int backRow2 = 0;
+        final int frontRow1 = 2;
+        final int frontRow2 = 1;
+
         int mirrorRow;
         Map<Integer, Integer> map = new HashMap<>();
-        map.put(0, 3);
-        map.put(1, 2);
-        map.put(2, 1);
-        map.put(3, 0);
+        map.put(backRow2, backRow1);
+        map.put(frontRow2, frontRow1);
+        map.put(frontRow1, frontRow2);
+        map.put(backRow1, backRow2);
 
         mirrorRow = map.get(affectedRow);
+        final int maxSize = 5;
         if (card instanceof HeartHound
-                && table.getTable().get(mirrorRow).size() == 5) {
+                && table.getTable().get(mirrorRow).size() == maxSize) {
             node.put("error", "Cannot steal enemy card since the player's row is full.");
             return true;
         }

@@ -32,12 +32,16 @@ public final class EndPlayerTurn implements Command {
 
         // find rows of cards of player
         ArrayList<ArrayList<Card>> rows = new ArrayList<>();
+        final int backRow = 3;
+        final int frontRow = 2;
         if (player.get(0).getPlayerIdx() == 1) {
-            rows.add(table.getTable().get(2));
-            rows.add(table.getTable().get(3));
+            rows.add(table.getTable().get(frontRow));
+            rows.add(table.getTable().get(backRow));
         } else {
-            rows.add(table.getTable().get(0));
-            rows.add(table.getTable().get(1));
+            final int backRow2 = 0;
+            final int frontRow2 = 1;
+            rows.add(table.getTable().get(frontRow2));
+            rows.add(table.getTable().get(backRow2));
         }
 
         // Unfreeze cards and reset ability attack

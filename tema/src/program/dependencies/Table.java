@@ -9,7 +9,8 @@ public final class Table {
 
     public Table() {
         table = new ArrayList<>();
-        for (int i = 0; i < 4; i++) {
+        final int rows = 4;
+        for (int i = 0; i < rows; i++) {
             table.add(new ArrayList<>());
         }
     }

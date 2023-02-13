@@ -19,6 +19,7 @@ import java.util.ArrayList;
 public final class CardUsesAbility implements Command {
     private final MyCoordinates cardAttacker;
     private final MyCoordinates cardAttacked;
+
     public CardUsesAbility(final ActionsInput input) {
         cardAttacker = new MyCoordinates(input.getCardAttacker());
         cardAttacked = new MyCoordinates(input.getCardAttacked());
@@ -89,13 +90,14 @@ public final class CardUsesAbility implements Command {
                                final ArrayList<Player> player) {
         Card attacker = table.getTable().get(cardAttacker.getX()).get(cardAttacker.getY());
         int playerIdx = player.get(0).getPlayerIdx();
+        final int backRow = 3;
 
         if (attacker instanceof Disciple && playerIdx == 1
                 && (cardAttacked.getX() == 0 || cardAttacked.getX() == 1)) {
             node.put("error", "Attacked card does not belong to the current player.");
             return true;
         } else if (attacker instanceof Disciple && playerIdx == 2
-                && (cardAttacked.getX() == 2 || cardAttacked.getX() == 3)) {
+                && (cardAttacked.getX() == 2 || cardAttacked.getX() == backRow)) {
             node.put("error", "Attacked card does not belong to the current player.");
             return true;
         }
@@ -107,10 +109,12 @@ public final class CardUsesAbility implements Command {
                               final ArrayList<Player> player) {
         Card attacker = table.getTable().get(cardAttacker.getX()).get(cardAttacker.getY());
         int playerIdx = player.get(0).getPlayerIdx();
+        final int backRow = 3;
 
         if ((attacker instanceof TheRipper || attacker instanceof Miraj
                 || attacker instanceof TheCursedOne)
-                && (playerIdx == 1 && (cardAttacked.getX() == 2 || cardAttacked.getX() == 3))) {
+                && (playerIdx == 1 && (cardAttacked.getX() == 2
+                || cardAttacked.getX() == backRow))) {
             node.put("error", "Attacked card does not belong to the enemy.");
             return true;
         } else if ((attacker instanceof TheRipper || attacker instanceof Miraj

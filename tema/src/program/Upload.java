@@ -47,6 +47,13 @@ import java.util.Collections;
 import java.util.Random;
 
 public final class Upload {
+    /**
+     * Method uploads decks and heroes into players
+     *
+     * @param input provides information to be uploaded
+     * @param players used to store input
+     * @param index used to determine which player is uploaded
+     */
     public void uploadPlayers(final Input input, final ArrayList<Player> players,
                                  final int index) {
         // Set players' hand and mana
@@ -69,6 +76,13 @@ public final class Upload {
         uploadHero(hero, players.get(1));
 
     }
+
+    /**
+     * Method uploads cards in decks of players
+     *
+     * @param player used to store the decks
+     * @param deck deck containing input to be stored in players
+     */
     public void uploadCards(final Player player, final ArrayList<CardInput> deck) {
         for (CardInput card: deck) {
             switch (card.getName()) {
@@ -86,6 +100,13 @@ public final class Upload {
             }
         }
     }
+
+    /**
+     * Method uploads hero into player info
+     *
+     * @param hero contains input of hero
+     * @param player used to store hero of player
+     */
     public void uploadHero(final CardInput hero, final Player player) {
         // create instance for hero of player
         switch (hero.getName()) {
@@ -95,6 +116,14 @@ public final class Upload {
             default -> player.setHero(new GeneralKocioraw(hero));
         }
     }
+
+    /**
+     * Method returns instance of command received based on
+     * its name.
+     *
+     * @param command input command
+     * @return returns instance of specific command
+     */
     public Command uploadCommand(final ActionsInput command) {
         return switch (command.getCommand()) {
             case "getCardsInHand" -> new GetCardsInHand(command);
@@ -118,6 +147,14 @@ public final class Upload {
             default -> new EndPlayerTurn();
         };
     }
+
+    /**
+     * Method adds mana to players and sets a card into their hands
+     * from their decks if available, at the beginning of a new round
+     *
+     * @param player stores input about cards and mana
+     * @param mana amount of mana to be given in current round
+     */
     public void newRound(final ArrayList<Player> player, final int mana) {
         // Add mana to players
         player.get(0).setMana(player.get(0).getMana() + mana);
@@ -133,6 +170,13 @@ public final class Upload {
             player.get(1).getDeck().getCards().remove(0);
         }
     }
+
+    /**
+     * Method shuffles decks of players at the beginning of the game
+     *
+     * @param player stores decks to be shuffled
+     * @param seed seed used by Random in order to shuffle
+     */
     public void shuffleDecks(final ArrayList<Player> player, final int seed) {
         Collections.shuffle(player.get(0).getDeck().getCards(), new Random(seed));
         Collections.shuffle(player.get(1).getDeck().getCards(), new Random(seed));

@@ -93,7 +93,8 @@ public final class PlaceCard implements Command {
             }
 
             ArrayList<Card> row = table.getTable().get(rowIdx);
-            if (row.size() == 5) {
+            final int maxSize = 5;
+            if (row.size() == maxSize) {
                 node.put("error", "Cannot place card on table since row is full.");
                 return true;
             }
@@ -108,14 +109,17 @@ public final class PlaceCard implements Command {
                 || card instanceof TheCursedOne || card instanceof Disciple) {
             // Find row
             int rowIdx;
+            final int backRow1 = 3;
+            final int backRow2 = 0;
             if (playerIdx == 0) {
-                rowIdx = 3;
+                rowIdx = backRow1;
             } else {
-                rowIdx = 0;
+                rowIdx = backRow2;
             }
 
             ArrayList<Card> row = table.getTable().get(rowIdx);
-            if (row.size() == 5) {
+            final int maxSize = 5;
+            if (row.size() == maxSize) {
                 node.put("error", "Cannot place card on table since row is full.");
                 return true;
             }

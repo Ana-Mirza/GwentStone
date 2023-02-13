@@ -64,7 +64,8 @@ public final class CardUsesAttack implements Command {
     // Check if card belongs to enemy
     private boolean cardError(final ObjectNode node, final ArrayList<Player> player) {
         int playerIdx = player.get(0).getPlayerIdx();
-        if (playerIdx == 1 && (cardAttacked.getX() == 2 || cardAttacked.getX() == 3)) {
+        final int backRow = 3;
+        if (playerIdx == 1 && (cardAttacked.getX() == 2 || cardAttacked.getX() == backRow)) {
             node.put("error", "Attacked card does not belong to the enemy.");
             return true;
         } else if (playerIdx == 2 && (cardAttacked.getX() == 0 || cardAttacked.getX() == 1)) {

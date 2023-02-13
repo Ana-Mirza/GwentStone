@@ -15,7 +15,8 @@ public abstract class Hero extends Card {
     // Constructor
     public Hero(final CardInput input) {
         super(input);
-        super.setHealth(30);
+        final int heroHealth = 30;
+        super.setHealth(heroHealth);
         attacked = 0;
     }
 

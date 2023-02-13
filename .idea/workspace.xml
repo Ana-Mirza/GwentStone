@@ -1,7 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="db031165-6d14-4e7c-b4a6-443213815ea3" name="Changes" comment="" />
+    <list default="true" id="db031165-6d14-4e7c-b4a6-443213815ea3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/checkstyle_8_36_2_all1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop-Tema1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/.idea/libraries/checkstyle_8_36_2_all.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/checkstyle.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test01_game_start.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test02_place_card.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test03_place_card_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test04_use_environment_card.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test05_use_environment_card_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test06_attack_card.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test07_attack_card_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test08_use_card_ability.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test09_use_card_ability_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test10_attack_hero.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test11_attack_hero_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test12_use_hero_ability_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test13_use_hero_ability_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test14_use_hero_ability_1_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test15_use_hero_ability_2_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test16_multiple_games_valid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test17_multiple_games_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/input/test18_big_game.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/lib/jackson-annotations-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/lib/jackson-core-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/lib/jackson-databind-2.13.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/lib/lombok.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/checker/Checker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/checker/CheckerConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/checker/Checkstyle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/checker/checkstyle-8.36.2-all.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/checker/checkstyle.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/checker/poo_checks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/fileio/ActionsInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/fileio/CardInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/fileio/Coordinates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/fileio/DecksInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/fileio/GameInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/fileio/Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/fileio/StartGameInput.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/main/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/Program.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/Upload.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/CardUsesAbility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/CardUsesAttack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/EndPlayerTurn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/GetCardAtPosition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/GetCardsInHand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/GetCardsOnTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/GetEnvironmentCardsInHand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/GetFrozenCardsOnTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/GetPlayerDeck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/GetPlayerHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/GetPlayerMana.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/GetPlayerOneWins.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/GetPlayerTurn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/GetPlayerTwoWins.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/GetTotalGamesPlayed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/MyCoordinates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/PlaceCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/UseAttackHero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/UseEnvironmentCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/commands/UseHeroAbility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/Deck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/environment/Environment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/environment/Firestorm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/environment/HeartHound.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/environment/Winterfell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/hero/EmpressThorina.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/hero/GeneralKocioraw.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/hero/Hero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/hero/KingMudface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/hero/LordRoyce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/minion/Berserker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/minion/Disciple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/minion/Goliath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/minion/Minion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/minion/Miraj.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/minion/Sentinel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/minion/TheCursedOne.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/minion/TheRipper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/deck/minion/Warden.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/dependencies/Hand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/dependencies/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/out/production/tema/program/dependencies/Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test01_game_start.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test02_place_card.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test03_place_card_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test04_use_environment_card.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test05_use_environment_card_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test06_attack_card.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test07_attack_card_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test08_use_card_ability.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test09_use_card_ability_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test10_attack_hero.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test11_attack_hero_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test12_use_hero_ability_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test13_use_hero_ability_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test14_use_hero_ability_1_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test15_use_hero_ability_2_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test16_multiple_games_valid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test17_multiple_games_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/ref/ref_test18_big_game.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test01_game_start.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test02_place_card.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test03_place_card_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test04_use_environment_card.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test05_use_environment_card_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test06_attack_card.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test07_attack_card_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test08_use_card_ability.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test09_use_card_ability_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test10_attack_hero.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test11_attack_hero_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test12_use_hero_ability_1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test13_use_hero_ability_2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test14_use_hero_ability_1_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test15_use_hero_ability_2_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test16_multiple_games_valid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test17_multiple_games_invalid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/result/out_test18_big_game.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/checker/Checker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/checker/CheckerConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/checker/Checkstyle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/checker/checkstyle-8.36.2-all.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/checker/checkstyle.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/checker/poo_checks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/fileio/ActionsInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/fileio/CardInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/fileio/Coordinates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/fileio/DecksInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/fileio/GameInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/fileio/Input.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/fileio/StartGameInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/main/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/Program.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/Upload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/CardUsesAbility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/CardUsesAttack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/EndPlayerTurn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/GetCardAtPosition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/GetCardsInHand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/GetCardsOnTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/GetEnvironmentCardsInHand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/GetFrozenCardsOnTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/GetPlayerDeck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/GetPlayerHero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/GetPlayerMana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/GetPlayerOneWins.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/GetPlayerTurn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/GetPlayerTwoWins.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/GetTotalGamesPlayed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/MyCoordinates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/PlaceCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/UseAttackHero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/UseEnvironmentCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/commands/UseHeroAbility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/Deck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/environment/Environment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/environment/Firestorm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/environment/HeartHound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/environment/Winterfell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/hero/EmpressThorina.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/hero/GeneralKocioraw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/hero/Hero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/hero/KingMudface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/hero/LordRoyce.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/minion/Berserker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/minion/Disciple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/minion/Goliath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/minion/Minion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/minion/Miraj.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/minion/Sentinel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/minion/TheCursedOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/minion/TheRipper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/deck/minion/Warden.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/dependencies/Hand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/dependencies/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/src/program/dependencies/Table.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema/tema.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml_diagram.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +225,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/anami/OneDrive - Universitatea Politehnica Bucuresti/facultate/anul 2/sem 1/oop/IdeaProjects/oop-Tema1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -34,6 +242,11 @@
       <option name="presentableId" value="Default" />
       <updated>1669110194883</updated>
       <workItem from="1669110198896" duration="44000" />
+      <workItem from="1670831902508" duration="24000" />
+      <workItem from="1670832045021" duration="42000" />
+      <workItem from="1671274529831" duration="2916000" />
+      <workItem from="1672441234032" duration="158000" />
+      <workItem from="1676280488863" duration="160000" />
     </task>
     <servers />
   </component>

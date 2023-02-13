@@ -47,7 +47,9 @@ public final class GetCardAtPosition implements Command {
         output.add(node);
     }
     private boolean getError(final Table table) {
-        if (y < 0 || x > 3) {
+        final int firstRow = 0;
+        final int lastRow = 3;
+        if (y < firstRow || x > lastRow) {
             return true;
         }
         return y >= table.getTable().get(x).size();

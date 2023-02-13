@@ -72,11 +72,3 @@ of using deep copy, as others suggested, I found an easier solution by using
 another method of the ObjectNode, called 'set', with 'valueToTree' used on the
 object to be saved as output. This method saved much time as it avoided
 copying manually everything from the object or by deep copy-ing every object.
-
-Feedback
--
-Overall, the homework was decent: not too impossible, and pretty well
-documented. As for the amount, it felt a little overwhelming taking into
-account the other homeworks, but it was manageable with the deadline extension.
-Also, regarding the Json, the materials provided were very helpful as we had
-no notion of it beforehand.
